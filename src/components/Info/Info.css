@@ -1,0 +1,64 @@
+.info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    align-items: flex-start;
+
+    h1 {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 42px;
+    }
+
+    span {
+        font-weight: 700;
+    }
+
+    p {
+        line-height: 22px;
+    }
+
+    .header-action {
+        display: flex;
+        align-items: center;
+        column-gap: 4px;
+    }
+
+    .button-play {
+        padding: 8px 25px;
+        display: inline-flex;
+        align-items: center;
+        column-gap: 8px;
+        color: #f3b01b;
+
+        span {
+            color: black;
+            font-weight: 400;
+            transition: color .4s;
+        }
+
+        span:hover {
+            color: #f3b01b;
+        }
+    }
+
+    .links {
+        display: flex;
+        column-gap: 15px;
+        transform: translateY(95px);
+
+        a {
+            display: block;
+            border: 1px solid #333;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 20px;
+            min-width: 36px;
+            text-align: center;
+        }
+    }
+
+    .bi-play-circle::before {
+        font-size: 32px;
+    }
+}

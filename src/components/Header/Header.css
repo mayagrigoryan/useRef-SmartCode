@@ -1,0 +1,13 @@
+.header {
+    padding: 70px 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-image {
+        width: 500px;
+    }
+}

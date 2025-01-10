@@ -1,0 +1,15 @@
+.nav {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 14px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
