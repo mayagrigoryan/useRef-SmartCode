@@ -1,16 +1,17 @@
-import './Header.css'
-import header from '../../assets/images/header.svg'
-import Info from '../Info/Info'
+import React, { forwardRef } from 'react';
+import './Header.css';
+import header from '../../assets/images/header.svg';
+import Info from '../Info/Info';
 
-function Header({ socialLinks, headerRef }) {
+const Header = forwardRef(({ socialLinks }, ref) => {
     return (
-        <header ref={headerRef} className='header'>
+        <header ref={ref} className='header'>
             <div className='container'>
                 <Info socialLinks={socialLinks} />
-                <img src={header} className='header-image' />
+                <img src={header} className='header-image' alt="header" />
             </div>
         </header>
-    )
-}
+    );
+});
 
-export default Header
+export default Header;

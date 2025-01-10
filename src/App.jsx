@@ -19,8 +19,8 @@ function App({menu, socialLinks, courses}) {
   return (
     <div>
       <Nav headerScroll={headerScroll} sectionScroll={sectionScroll}  menu={menu}/>
-      <Header headerRef={headerRef} socialLinks={socialLinks}/>
-      <Section sectionRef={sectionRef} courses={courses}/>
+      <Header ref={headerRef} socialLinks={socialLinks}/>
+      <Section ref={sectionRef} courses={courses}/>
     </div>
   )
 }
